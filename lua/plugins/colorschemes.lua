@@ -1,3 +1,10 @@
+return {
+	"rose-pine/neovim",
+	name = "rose-pine",
+	config = function()
+		vim.cmd("colorscheme rose-pine")
+	end
+}
 --[[
 return {
         "embark-theme/vim",
@@ -25,7 +32,7 @@ return {
     end,
 }
 --]]
-
+--[[
 return {
     "sainnhe/sonokai",
     as = "sonokai",
@@ -33,3 +40,4 @@ return {
         vim.cmd('colorscheme sonokai')
     end
 }
+--]]
