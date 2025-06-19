@@ -52,5 +52,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
             })
         end
     end,
-
 })

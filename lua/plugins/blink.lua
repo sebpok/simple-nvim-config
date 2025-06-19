@@ -12,7 +12,7 @@ return {
                 signature = { enabled = true },
                 appearance = {
                     use_nvim_cmp_as_default = false,
-                    nerd_font_variant = "normal",
+                    nerd_font_variant = "mono",
                 },
                 sources = {
                     default = { "lsp", "path", "snippets", "buffer" },
@@ -24,6 +24,7 @@ return {
                 },
                 keymap = {
                     ["<C-f>"] = {},
+                    ["<CR>"] = { "accept", "fallback"},
                 },
                 cmdline = {
                     enabled = false,
@@ -34,15 +35,14 @@ return {
                 },
                 completion = {
                     menu = {
-                        border = nil,
-                        scrolloff = 1,
-                        scrollbar = false,
+                        border = "rounded",
+                        scrolloff = 2,
+                        scrollbar = true,
                         draw = {
                             columns = {
                                 { "kind_icon" },
-                                { "label",      "label_description", gap = 1 },
+                                { "label" },
                                 { "kind" },
-                                { "source_name" },
                             },
                         },
                     },
