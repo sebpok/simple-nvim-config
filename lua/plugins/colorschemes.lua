@@ -1,4 +1,5 @@
---[[return {
+--[[
+return {
         "embark-theme/vim",
         as = "embark",
         config = function ()
@@ -6,6 +7,8 @@
         end
 }
 --]]
+
+--[[
 return {
     "sainnhe/gruvbox-material",
     enabled = true,
@@ -20,4 +23,13 @@ return {
         vim.g.gruvbox_material_cursor = "auto"
         vim.cmd.colorscheme("gruvbox-material")
     end,
+}
+--]]
+
+return {
+    "sainnhe/sonokai",
+    as = "sonokai",
+    config = function ()
+        vim.cmd('colorscheme sonokai')
+    end
 }
