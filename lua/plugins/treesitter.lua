@@ -10,7 +10,7 @@ return {
         require('nvim-treesitter.configs').setup({
             ignore_install = {},
             modules = {},
-            ensure_installed = { "lua" },
+            ensure_installed = { "lua", "typescript", "javascript", "vue", "html", "css" },
 
             sync_install = false,
             auto_install = true,
