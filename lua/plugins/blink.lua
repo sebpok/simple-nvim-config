@@ -46,8 +46,8 @@ return {
                             score_offset = 0,
                             async = true,
                             opts = {
-                                max_suggestions = 2,
-                                max_attempts = 3,
+                                max_suggestions = 1,
+                                max_attempts = 1,
                                 kind_icon = "",
                                 kind_name = "Copilot",
                             }
